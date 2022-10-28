@@ -8,7 +8,6 @@ export default function Home() {
         <title>Salman | Portfolio</title>
       </Head>
       
-      {/* Header  */}
       <Header />
 
       {/* Hero Section  */}
