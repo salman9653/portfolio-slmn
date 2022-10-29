@@ -12,11 +12,11 @@ const About = (props: Props) => {
         transition={{ duration : 1.5 }}
         className='h-screen flex flex-col md:flex-row relative text-center md:text-left max-w-7xl px-10 justify-evenly mx-auto items-center'
     >
-        <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl font-semibold'>
+        <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-xl font-semibold'>
             About
         </h3>
         <motion.img
-            className='-mb-32 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-64'
+            className='-mb-32 md:mb-0 flex-shrink-0 w-40 h-40 rounded-full object-cover md:rounded-lg md:w-64 md:h-64'
             initial={{ x : -200, opacity : 0}}
             whileInView={{ x : 0, opacity : 1 }}
             viewport={{ once : true }}
