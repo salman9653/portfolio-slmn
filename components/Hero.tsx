@@ -13,7 +13,7 @@ const Hero = (props: Props) => {
         words: [
             "Hi ! Am Salman",
             "Guy_who_Loves_Coffee.tsx",
-            "<ButLovesToCodeMore />"
+            "<ButLovesToCodeMore/>"
         ],
         loop: true,
         delaySpeed:2000,
@@ -28,25 +28,25 @@ const Hero = (props: Props) => {
                 placeholder="blur"
             />
             <div className='z-20'>
-                <h2 className='text-sm uppercase text-gray-400 pb-2 tracking-[15px]'>
+                <h2 className='text-sm uppercase text-gray-300 pb-4 tracking-[15px]'>
                     Web Developer
                 </h2>
-                <h1 className='text-3xl lg:text-4xl font-semibold px-10'>
+                <h1 className='text-2xl lg:text-4xl font-semibold px-10'>
                     <span className='mr-3'>{text}</span>
                     <Cursor cursorColor='#F7AB0A'/>
                 </h1>
-                <div className='pt-5'>
+                <div className='pt-10'>
                     <Link href="#about">
-                        <button className='heroButton mx-2'>About</button>
+                        <button className='heroButton m-1 md:mx-4'>About</button>
                     </Link>
                     <Link href="#experience">
-                        <button className='heroButton mx-2'>Experience</button>
+                        <button className='heroButton m-1 md:mx-4'>Experience</button>
                     </Link>
                     <Link href="skills">
-                        <button className='heroButton mx-2'>Skills</button>
+                        <button className='heroButton m-1 md:mx-4'>Skills</button>
                     </Link>
                     <Link href="projects">
-                     <button className='heroButton mx-2'>Projects</button>
+                     <button className='heroButton m-1 md:mx-4'>Projects</button>
                     </Link>                   
                    
                 </div>
