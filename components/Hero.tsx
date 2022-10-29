@@ -28,10 +28,10 @@ const Hero = (props: Props) => {
                 placeholder="blur"
             />
             <div className='z-20'>
-                <h2 className='text-sm uppercase text-gray-300 pb-4 tracking-[15px]'>
+                <h2 className='text-sm uppercase text-gray-400 pb-2 tracking-[15px]'>
                     Web Developer
                 </h2>
-                <h1 className='text-2xl lg:text-4xl font-semibold px-10'>
+                <h1 className='text-2xl lg:text-4xl  text-gray-300 font-semibold px-10'>
                     <span className='mr-3'>{text}</span>
                     <Cursor cursorColor='#F7AB0A'/>
                 </h1>
@@ -42,10 +42,10 @@ const Hero = (props: Props) => {
                     <Link href="#experience">
                         <button className='heroButton m-1 md:mx-4'>Experience</button>
                     </Link>
-                    <Link href="skills">
+                    <Link href="#skills">
                         <button className='heroButton m-1 md:mx-4'>Skills</button>
                     </Link>
-                    <Link href="projects">
+                    <Link href="#projects">
                      <button className='heroButton m-1 md:mx-4'>Projects</button>
                     </Link>                   
                    
