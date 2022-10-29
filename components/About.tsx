@@ -24,14 +24,15 @@ const About = (props: Props) => {
             src='https://salman9653.github.io/portfolio-responsive/assets/img/about.jpg'
         />
         <div className='space-y-7 px-0 md:px-10'>
-            <h4 className='text-4xl font-semibold'>
+            <h4 className='text-3xl font-semibold'>
                 Here is a <span className='underline decoration-[#F7AB0A]/50'>little</span> background
             </h4>
             <p className='text-base'>
-                An Expert Website Designer. <br /><br />
+                <span className='text-[#F7AB0A]/70 text-lg font-semibold'>An Expert Website Developer.</span> <br /><br />
                 I am your source for creative design solutions. <br />
-                I actively listen to the needs of my clients, and make sure I produce designs that meet their exact demands. <br /><br />
-                My passion is my work, and I’m committed to bringing my clients’ visions to life.
+                I can also be of great help when it comes to ideate and showing creativity. <br />
+                Am always excited to explore, learn and understand newer technologies. <br /><br />
+                My passion is my work, and I’m committed to bringing visions to life.
             </p>
         </div>
     </motion.div>
