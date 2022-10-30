@@ -18,8 +18,7 @@ const Skills = (props: Props) => {
     </h3>
     <h3 className='absolute top-32 uppercase tracking-[3px] text-sm text-gray-500'>Hover over a skill for current Proficiency</h3>
 
-    <div className='grid grid-cols-4 gap-4'>
-        <Skill /><Skill /><Skill /><Skill />
+    <div className='grid grid-cols-3 md:grid-cols-4 gap-4'>
         <Skill /><Skill /><Skill /><Skill />
         <Skill /><Skill /><Skill /><Skill />
         <Skill /><Skill /><Skill /><Skill />
