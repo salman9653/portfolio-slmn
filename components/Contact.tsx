@@ -39,7 +39,7 @@ const Contact = (props: Props) => {
                     </div>
                     <input className='contactInput' placeholder='Subject' type="text" />
                     <textarea className='contactInput' placeholder='Message' />
-                    <button type='Submit' className='bg-[#F7AB0A] px-10 py-3 rounded-md text-black font-bold text-lg'>
+                    <button type='submit' className='bg-[#F7AB0A] px-10 py-3 rounded-md text-black font-bold text-lg'>
                         Submit
                     </button>
                 </form>
