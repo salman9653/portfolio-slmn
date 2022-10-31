@@ -11,7 +11,7 @@ import Contact from '../components/Contact';
 
 export default function Home() {
   return (
-    <div className='bg-[#222] text-white h-screen snap-y snap-mandatory overflow-scroll z-0'>
+    <div className='bg-[#222] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0'>
 
       <Head>
         <title>Salman | Portfolio</title>
