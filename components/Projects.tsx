@@ -17,7 +17,7 @@ const Projects = (props: Props) => {
     </h3>
 
     <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
-        {Projects.map((project,i )=> (
+        {/* {Projects.map((project,i )=> ( */}
             <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-14 md:p-44  h-screen'>
                 <motion.img
                     initial={{ y:-300, opacity: 0 }}
@@ -30,7 +30,7 @@ const Projects = (props: Props) => {
                 />
                 <div className='space-y-6 px-0 md:px-10 max-w-6xl'>
                     <h4 className='text-2xl font-semibold text-center'>
-                        <span className='underline decoration-[#F7AB0A]/50'>Project {i+1} of {Projects.length} :</span> Music App
+                        <span className='underline decoration-[#F7AB0A]/50'>Project 1 of 5 :</span> Music App
                     </h4>
                     <p className='text-lg text-center md:text-left'>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -41,7 +41,7 @@ const Projects = (props: Props) => {
                     </p>
                 </div>
             </div>
-        ))}
+        {/* ))} */}
     </div>
 
     <div className='w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[360px] -skew-y-12' />
