@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import Link from 'next/link';
+import {ArrowUpCircleIcon} from '@heroicons/react/24/solid';
 
 import Header from '../components/Header';
 import Hero from '../components/Hero';
@@ -7,7 +9,6 @@ import Experience from '../components/Experience';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
-
 
 export default function Home() {
   return (
@@ -46,9 +47,17 @@ export default function Home() {
       </section>
 
       {/* Contact Me  */}
-      <section id='projects' className='snap-start'>
+      <section id='contact' className='snap-start'>
         <Contact/>
       </section>
+
+      <Link href='#hero'>
+        <footer className='sticky bottom-5 w-full cursor-pointer'>
+          <div className='flex items-center justify-center'>
+            <ArrowUpCircleIcon className='h-10 w-10 hover:text-[#F7AB0A]/80 cursor-pointer'/>
+          </div>
+        </footer>
+      </Link>
 
     </div>
   )
