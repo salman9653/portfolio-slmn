@@ -21,11 +21,11 @@ type Props = {
   pageInfo : PageInfo;
   experiences : Experience[];
   skills : Skill[];
-  // projects : Project[];
+  projects : Project[];
   socials : Social[];
 }
 
-const Home = ({ pageInfo, experiences, socials, skills,} : Props) => {
+const Home = ({ pageInfo, experiences, projects, socials, skills,} : Props) => {
   return (
     <div className='bg-[#222] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 scrollbar-thin'>
 
@@ -58,7 +58,7 @@ const Home = ({ pageInfo, experiences, socials, skills,} : Props) => {
 
       {/* Projects  */}
       <section id='projects' className='snap-start'>
-        <Projects/>
+        <Projects projects={projects} />
       </section>
 
       {/* Contact Me  */}
@@ -83,7 +83,7 @@ export default Home;
 export const getStaticProps: GetStaticProps<Props> = async() => {
   const pageInfo: PageInfo = await fetchPageInfo();
   const experiences: Experience[] = await fetchExperiences();
-  // const projects: Project[] = await fetchProjects();
+  const projects: Project[] = await fetchProjects();
   const socials: Social[] = await fetchSocial();
   const skills: Skill[] = await fetchSkills();
 
@@ -91,7 +91,7 @@ export const getStaticProps: GetStaticProps<Props> = async() => {
     props: {
       pageInfo,
       experiences,
-      // projects,
+      projects,
       socials,
       skills,
     },
