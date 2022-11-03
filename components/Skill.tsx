@@ -16,6 +16,7 @@ const Skill = ({skill,directionLeft}: Props) => {
             initial={{ x: directionLeft ? -100 : 100 , opacity :0 }}
             transition={{duration:1}}
             whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once : true }}
             className="h-20 w-20 rounded-full border border-gray-600 object-cover filter group-hover:grayscale transition duration-300 ease-in-out"
         />
         <div className='absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-20 w-20 z-0 rounded-full'>

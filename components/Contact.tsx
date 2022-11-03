@@ -2,6 +2,7 @@ import React from 'react'
 import {motion} from 'framer-motion';
 import {PhoneIcon, MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
 import { useForm, SubmitHandler } from "react-hook-form";
+import { PageInfo } from '../typings';
 
 type Inputs = {
     name: string,
@@ -10,9 +11,11 @@ type Inputs = {
     message: string,
     
   };
-type Props = {}
+type Props = {
+    pageInfo: PageInfo
+}
 
-const Contact = (props: Props) => {
+const Contact = ({pageInfo}: Props) => {
 
     const { register, handleSubmit } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = formData => {
@@ -36,16 +39,16 @@ const Contact = (props: Props) => {
             <div className='space-y-4'>
                 <div className='flex items-center space-x-5 justify-center'>
                     <PhoneIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
-                    <p className='text-xl'>+91-9876543210</p>
+                    <p className='text-xl'>{pageInfo?.phoneNumber}</p>
                 </div>
                 <div className='flex items-center space-x-5 justify-center'>
                     <EnvelopeIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
-                    <p className='text-xl'>slmn634@gmail.com</p>
+                    <p className='text-xl'>{pageInfo?.email}</p>
                 </div>
-                <div className='flex items-center space-x-5 justify-center'>
+                {/* <div className='flex items-center space-x-5 justify-center'>
                     <MapPinIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
-                    <p className='text-xl'>#123 Developer Street</p>
-                </div>
+                    <p className='text-xl'>{pageInfo?.address}</p>
+                </div> */}
                 <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-fit mx-auto'>
                     <div className='flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2'>
                         <input {...register('name')} className='contactInput' placeholder='Name' type="text" />
