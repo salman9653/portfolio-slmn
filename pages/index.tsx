@@ -43,7 +43,7 @@ const Home = ({ pageInfo, experiences, socials, skills,} : Props) => {
 
       {/* About Section  */}
       <section id='about' className='snap-center'>
-        <About/>
+        <About pageInfo={pageInfo} />
       </section>
       
       {/* Experiences  */}

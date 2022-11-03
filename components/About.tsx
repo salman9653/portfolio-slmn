@@ -1,10 +1,14 @@
 import React from 'react';
 import {motion} from 'framer-motion';
+import { PageInfo } from '../typings';
+import { urlFor } from '../sanity';
 
 
-type Props = {}
+type Props = {
+    pageInfo: PageInfo
+}
 
-const About = (props: Props) => {
+const About = ({pageInfo}: Props) => {
   return (
     <motion.div
         initial={{ opacity: 0 }}
@@ -16,23 +20,20 @@ const About = (props: Props) => {
             About
         </h3>
         <motion.img
-            className='-mb-32 md:mb-0 flex-shrink-0 w-40 h-40 rounded-full object-cover md:rounded-lg md:w-64 md:h-64'
+            className='-mb-32 md:mb-0 flex-shrink-0 w-40 h-40 rounded-full object-cover md:rounded-lg md:w-72 md:h-80'
             initial={{ x : -200, opacity : 0}}
             whileInView={{ x : 0, opacity : 1 }}
             viewport={{ once : true }}
             transition={{ duration : 1.2 }}
-            src='https://salman9653.github.io/portfolio-responsive/assets/img/about.jpg'
+            src={urlFor(pageInfo?.profilePic).url()}
         />
-        <div className='space-y-7 px-0 md:px-10'>
+        <div className='space-y-7 px-0 md:px-20'>
             <h4 className='text-3xl font-semibold'>
                 Here is a <span className='underline decoration-[#F7AB0A]/50'>little</span> background
             </h4>
             <p className='text-base'>
                 <span className='text-[#F7AB0A]/70 text-lg font-semibold'>An Expert Website Developer.</span> <br /><br />
-                I am your source for creative design solutions. <br />
-                I can also be of great help when it comes to ideate and showing creativity. <br />
-                Am always excited to explore, learn and understand newer technologies. <br /><br />
-                My passion is my work, and I’m committed to bringing visions to life.
+                {pageInfo?.backgroundInformation}
             </p>
         </div>
     </motion.div>
