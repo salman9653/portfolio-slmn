@@ -12,10 +12,10 @@ const GitHubProfile = (props: Props) => {
     transition={{ duration : 1.5 }}
     className='h-screen flex flex-col md:flex-row relative text-center md:text-left max-w-7xl px-10 justify-evenly mx-auto items-center'
 >
-    <h3 className='absolute top-20 uppercase tracking-[10px] md:tracking-[20px] text-gray-500 text-xl font-semibold'>
+    <h3 className='absolute top-20 uppercase tracking-[8px] md:tracking-[18px] text-gray-500 text-xl font-semibold'>
       GitHub - Profile
     </h3>
-    <div className='flex flex-col md:flex-row space-x-4 space-y-4 md:space-y-0 items-center justify-evenly border p-4 rounded-xl border-[#F7AB0A]/60'>
+    <div className='flex flex-col md:flex-row space-x-4 space-y-4 md:space-y-0 items-center justify-evenly border p-4 rounded-xl border-[#555]/60'>
       <div className='flex flex-col space-y-4'>
         <Link href="http://www.github.com/salman9653">
           <img src="https://github-readme-stats.vercel.app/api?username=salman9653&show_icons=true&hide=issues,&title_color=F7AB0A&text_color=ffffff&icon_color=ffffff&bg_color=262626&hide_border=true&show_icons=true" alt="salman9653's GitHub stats" />
