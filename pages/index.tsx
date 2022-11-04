@@ -6,7 +6,8 @@ import {ArrowUpCircleIcon} from '@heroicons/react/24/solid';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import About from '../components/About';
-import WorkExperience from '../components/WorkExperience';
+import GitHubProfile from "../components/GitHubProfile"
+// import WorkExperience from '../components/WorkExperience';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
@@ -44,6 +45,11 @@ const Home = ({ pageInfo, experiences, projects, socials, skills,} : Props) => {
       {/* About Section  */}
       <section id='about' className='snap-center'>
         <About pageInfo={pageInfo} />
+      </section>
+
+       {/* Github */}
+       <section id='githubProfile' className='snap-start'>
+        <GitHubProfile />
       </section>
       
       {/* Experiences  */}

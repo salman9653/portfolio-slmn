@@ -2,6 +2,7 @@ import React from 'react';
 import {motion} from 'framer-motion';
 import { Project } from '../typings';
 import { urlFor } from '../sanity';
+import Link from 'next/link';
 
 type Props = {
     projects: Project[]
@@ -33,7 +34,8 @@ const Projects = ({projects}: Props) => {
                 />
                 <div className='space-y-6 px-0 md:px-10 max-w-6xl'>
                     <h4 className='text-2xl font-semibold text-center'>
-                        <span className='underline decoration-[#F7AB0A]/50'>Project {i+1} of {projects?.length} :</span> {project?.title}
+                       Project {i+1} of {projects?.length} : 
+                        <Link href={project?.linkToBuild} target="_blank"><span className='text-[#F7AB0A]/90 underline decoration-[#F7AB0A]/30'> {project?.title}</span> </Link>
                     </h4>
 
                     <div className='flex items-center space-x-2 justify-center'>
@@ -41,7 +43,7 @@ const Projects = ({projects}: Props) => {
                             <img
                                 key={technology?._id}
                                 src={urlFor(technology?.image).url()}
-                                className="h-10 w-10"
+                                className="h-8 w-auto"
                                 alt={technology?.title} />
                         ))}
                     </div>

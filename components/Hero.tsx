@@ -40,8 +40,11 @@ const Hero = ({pageInfo}: Props) => {
                     <Link href="#about">
                         <button className='heroButton m-1 md:mx-4'>About</button>
                     </Link>
-                    <Link href="#experience">
+                    {/* <Link href="#experience">
                         <button className='heroButton m-1 md:mx-4'>Experience</button>
+                    </Link> */}
+                    <Link href="#githubProfile">
+                        <button className='heroButton m-1 md:mx-4'>Github Profile</button>
                     </Link>
                     <Link href="#skills">
                         <button className='heroButton m-1 md:mx-4'>Skills</button>

@@ -45,10 +45,10 @@ const Contact = ({pageInfo}: Props) => {
                     <EnvelopeIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
                     <p className='text-xl'>{pageInfo?.email}</p>
                 </div>
-                {/* <div className='flex items-center space-x-5 justify-center'>
+                <div className='flex items-center space-x-5 justify-center'>
                     <MapPinIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
                     <p className='text-xl'>{pageInfo?.address}</p>
-                </div> */}
+                </div>
                 <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-fit mx-auto'>
                     <div className='flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2'>
                         <input {...register('name')} className='contactInput' placeholder='Name' type="text" />
